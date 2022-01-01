@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import BinarySearchTree from './Components/BinarySearchTree';
+import D3 from './Components/D3';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Algorithm Visualizer!</h1>
+    <div>
+      <D3 />      
     </div>
   );
 }
