@@ -1,10 +1,13 @@
 import BinarySearchTree from './Components/BinarySearchTree';
 import D3 from './Components/D3';
+import data from './data.json';
 
-function App() {
+const App = () => {
+
   return (
     <div>
-      <D3 />      
+      <h1>Binary Search Tree</h1>  
+      <D3 data={data} />
     </div>
   );
 }

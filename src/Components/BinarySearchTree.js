@@ -1,17 +1,18 @@
-class Node {
+import React, { useEffect } from 'react';
+import D3 from './D3';
 
-  constructor(value) {
-    this.value = value;
-    this.parent = null;
-    this.left = null;
-    this.right = null;
-  }
+const BinarySearchTree = (data) => {
 
+  useEffect(() => {
+    console.log(data);
+  }, [])
+
+  return(
+    <div>
+      <p>SVG goes here</p>
+      <D3 data={data}/>
+    </div>
+  )
 }
 
-class BinarySearchTree {
-  
-  constructor(node) {
-    this.root = node;
-  }
-}
+export default BinarySearchTree;
